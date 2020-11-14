@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Poppins;
+            font-weight: 800;
+            background-color: rgb(31, 31, 31);
+            color: white;
+            
+            background-image: url(hintergrund.png);
+            background-size: 10%;
+        }
+        h1{
+            font-size: 500%;
+            font-weight: bold;
+            animation: blinkShadow 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+        }
+        h2{ 
+            color: rgb(255, 0, 157);
+            font-size: 200%;
+            font-weight: bold;
+            animation: blink 0.5s linear infinite;
+            
+        }
+        #center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 30px;
+        }
+        #linkcontainer{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        #listcontainer{
+            align-items: center;
+            display: flex;      
+            flex-direction: column;
+        }
+        .highlight{
+            font-size: 150%;
+            color: hotpink;
+            display: inline;
+        }
+        hr{
+            border-style: solid;
+            width: 50%;
+            height: 2px;
+            transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+         hr:hover{
+            width: 60%;
+        }
+        #linkcontainer a{
+            color: aliceblue;
+            filter: blur(5px);
+            transition: 0.3s;
+        }
+        #linkcontainer a:visited{
+            color: rgb(0, 173, 241);
+        }
+        #linkcontainer a:hover{
+            filter: blur(0px);
+        }
+        #listcontiner a{
+            color: orangered;
+        }
+        #listcontainer a:visited{
+            color: orange;
+        }
+
+        @keyframes blinkShadow{
+            0%{
+                text-shadow: rgb(255, 0, 0) 10px 10px 0px, rgb(0, 255, 0) 20px 20px 0px,rgb(0, 0, 255) 30px 30px 0px;
+            }
+            25%{
+                text-shadow: rgb(255, 0, 0) -10px 10px 0px, rgb(0, 255, 0) -20px 20px 0px,rgb(0, 0, 255) -30px 30px 0px;
+            }
+            50%{
+                text-shadow: rgb(255, 0, 0) -10px -10px 0px, rgb(0, 255, 0) -20px -20px 0px,rgb(0, 0, 255) -30px -30px 0px;
+            }
+            75%{
+                text-shadow: rgb(255, 0, 0) 10px -10px 0px, rgb(0, 255, 0) 20px -20px 0px,rgb(0, 0, 255) 30px -30px 0px;
+            }
+            100%{
+                text-shadow: rgb(255, 0, 0) 10px 10px 0px, rgb(0, 255, 0) 20px 20px 0px,rgb(0, 0, 255) 30px 30px 0px;
+            }
+        }
+
+        @keyframes blink{
+            0%{
+                opacity: 0%;
+            }
+            50%{
+                opacity: 100%;
+            }
+            100%{
+                opacity: 0%;
+            }
+        }
+        #leftside{
+            width: 50px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            left: 0%;
+        }
+        #rightside{
+            width: 50px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            right: 0%;
+        }
+        #footnote{
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            line-height: 0px;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            bottom: 0%; 
+        }
+
+    </style>
+</head>
+<body>
+<div id="leftside">
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+</div>
+<div id="rightside">
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+    <h3>hi</h3>
+</div>
+<div id="center">
+    <h1> Fanpage of Ben Asholt </h1>
+    <br>
+    <div id="linkcontainer">
+        <h2>Links</h2>
+        <h3> Instagram: <a href="https://www.instagram.com/ben_aslt/">Ben Asholt der aller echte </a> </h3>
+        <h3> Instagram Fanpage: <a href="https://www.instagram.com/ben_asltfanpage/"> Ben Asholt Fanpage </a> </h3> 
+        <h3> Pornhub: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Pornhub</a></h3>
+    </div>
+    <hr>
+    <div id="listcontainer">
+        <h2> Gründe warum ihr ihn lieben solltet</h2>
+        <ol>
+            <li>Er ist hot</li>
+            <li>Er ist nicht tot</li>
+            <li>Sein Lieblingsessen ist Schinken mit Chips</li>
+            <li>Er ist mega groß, das was alle <div class="highlight">Mädchen</div> Lieben</li> 
+            <li>Seine Haare sind Flauschig, perfekt für einen kraul Afternoon</li> 
+            <li>Er besitz natürlich <a href="https://netflix.com">Netflix</a></li>
+            <li>Er hat genug Geld fuer <a href="https://kamps.de/">Kamps</a></li>
+            <li>Bitte slidet in seine DM's rein </li>
+            <li>Er wartet auf euch!</li>
+        </ol>
+    </div>    
+</div>
+<div id="footnote">
+    <p>prod. by Mathete und Harri || VER.1</p>
+    <p>Morgen kommt neue Version ihr pisser</p>
+</div>
+
+</body>
